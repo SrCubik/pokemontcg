@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokémon TCG Card Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="search">
+        <input id="card-id" type="text" value="swsh3-136" placeholder="Card ID, e.g. swsh3-136">
+        <button type="submit">Fetch card</button>
+        <button type="button" id="random">Random card</button>
+    </form>
+
+    <p id="status"></p>
+
+    <div id="card" hidden>
+        <img id="card-image" alt="">
+        <div class="info">
+            <h1 id="card-name"></h1>
+            <p id="card-meta"></p>
+            <h2>Value</h2>
+            <div id="card-prices"></div>
+        </div>
+    </div>
+
+    <section id="illustrations" hidden>
+        <h2 id="illustrations-title"></h2>
+        <div id="gallery"></div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

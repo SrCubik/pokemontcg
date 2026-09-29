@@ -1,0 +1,102 @@
+body {
+    font-family: system-ui, sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 16px;
+    background: #f4f4f7;
+    color: #222;
+}
+
+#search {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+#search input {
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+#search button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#card:not([hidden]) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+#card-image {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    flex: 1;
+    min-width: 260px;
+}
+
+.info h1 {
+    margin: 0 0 4px;
+}
+
+#card-meta {
+    color: #666;
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+
+th, td {
+    text-align: left;
+    padding: 6px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #eee;
+}
+
+#illustrations {
+    margin-top: 2rem;
+}
+
+#gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+#gallery img {
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+#gallery img.current {
+    outline: 3px solid #e3350d;
+    outline-offset: 2px;
+}
+
+#gallery h3 {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1rem;
+    color: #444;
+}
